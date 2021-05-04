@@ -10,3 +10,11 @@ notes = sqlalchemy.Table(
     sqlalchemy.Column("text", sqlalchemy.String),
     sqlalchemy.Column("completed", sqlalchemy.Boolean),
 )
+
+users=sqlalchemy.Table(
+    'users',
+    metadata,
+    sqlalchemy.Column("id",sqlalchemy.Integer,primary_key=True),
+    sqlalchemy.Column('email',sqlalchemy.String),
+)
+
